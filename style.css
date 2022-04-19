@@ -82,12 +82,12 @@ h2 {
 .main-title {
   height: 100vh;
   margin: 0;
-  padding-top: 55%;
+  padding-top: 60%;
   padding-right: 30%;
   padding-left: 8%;
   text-align: justify;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  word-break: break-all;
+  word-break: initial;
   color: #d9d9d9;
   text-shadow: 2px 2px 0px #1b1b1e, 5px 4px 0px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
@@ -132,8 +132,17 @@ h2 {
 }
 
 .text {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-shadow: 2px 2px 0px #1b1b1e, 5px 4px 0px rgba(0, 0, 0, 0.15);
+  line-height: 3vh;
+}
+.text-flamming {
+  text-shadow: 2px 2px 0 azure, 2px -2px 0 azure, -2px 2px 0 azure,
+    -2px -2px 0 azure, 2px 0px 0 azure, 0px 2px 0 azure, -2px 0px 0 azure,
+    0px -2px 0 azure;
+}
+.text-inset {
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .text-box {
   height: 80vh;
@@ -170,7 +179,7 @@ h2 {
   background-color: #1b1b1e;
 }
 .bg-light {
-  background-color: #ceb5a7;
+  background-color: #b19789;
 }
 .bg-green-light {
   background-color: #73eedc;
@@ -179,7 +188,7 @@ h2 {
   background-color: #73c2be;
 }
 .bg-hot {
-  background-color: #f7567c;
+  background-color: #b80c09;
 }
 .font-dark {
   color: #1b1b1e;
@@ -194,16 +203,31 @@ h2 {
   color: #73c2be;
 }
 .font-hot {
-  color: #f7567c;
+  color: #b80c09;
 }
 .font-white {
   color: azure;
+}
+.font-giant {
+  font-size: calc((9 / 16) * 20vh);
 }
 .font-xxlarge {
   font-size: calc((9 / 16) * 10vh);
 }
 .font-xlarge {
   font-size: calc((9 / 16) * 6vh);
+}
+.fonr-tiny {
+  font-size: calc((9 / 16) * 1vh);
+}
+.font-bold {
+  font-weight: bolder;
+}
+.dosis {
+  font-family: "Dosis", sans-serif;
+}
+.indie-flower {
+  font-family: "Indie Flower", cursive;
 }
 /*positioning*/
 .flex-container {
