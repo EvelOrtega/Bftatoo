@@ -122,11 +122,8 @@ footer {
 .biosseguranca {
   height: 100vh;
   margin: 0;
-
-  padding-right: 30%;
-  padding-left: 8%;
+  padding: 5% 5%;
   text-align: justify;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   word-break: initial;
   color: #d9d9d9;
   text-shadow: 2px 2px 0px #1b1b1e, 5px 4px 0px rgba(0, 0, 0, 0.15);
@@ -179,7 +176,7 @@ footer {
     1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .text-box {
-  height: 80vh;
+  height: 80vw;
   box-sizing: border-box;
   padding: 3vh;
 }
@@ -331,4 +328,7 @@ footer {
 }
 .profile-pic {
   margin-top: 30px;
+}
+.overflow {
+  overflow-y: scroll;
 }
