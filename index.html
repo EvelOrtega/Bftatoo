@@ -1,26 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <meta name="authot" content="Evel Ortega" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BF-Tatoo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&family=Indie+Flower&display=swap"
       rel="stylesheet"
     />
-
     <link
-      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Brenda Fraga Tatoo</title>
   </head>
   <body>
-    <main>
-      <section id="a0" class="bg-dark intro">
+    <!--Nav Bar-->
+    <div class="sticky font-xxlarge indie-flower font-dark">
+      <header>
+        <nav
+          class="navbar navbar-dark bg-frosted-glass menu-button"
+          aria-label="Seventh navbar example"
+        >
+          <div class="container-fluid flex-right">
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarsExampleXxl"
+              aria-controls="navbarsExampleXxl"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="navbar-collapse collapse"
+              id="navbarsExampleXxl"
+              style=""
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active font-dark"
+                    aria-current="page"
+                    href="#p2"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active font-dark"
+                    aria-current="page"
+                    href="#p3"
+                    >Meu estilo</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    class="nav-link active font-dark"
+                    aria-current="page"
+                    href="#p5"
+                    >Depoimentos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active font-dark"
+                    aria-current="page"
+                    href="#p6"
+                    >Biossegurança</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active font-dark"
+                    aria-current="page"
+                    href="#p8"
+                    >Contato</a
+                  >
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle font-dark"
+                    href="#"
+                    id="dropdownXxl"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Galerias</a
+                  >
+                  <ul
+                    class="dropdown-menu bg-frosted-glass font-xlarge"
+                    aria-labelledby="dropdownXxl"
+                  >
+                    <li><a class="dropdown-item" href="#p4">Tatuagens</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#p7">Desenhos</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <!--/.Navbar-->
+
+    <!--Folha de Rosto-->
+    <section class="bg1" id="p1">
+      <article>
         <div class="main-title flex-display flex-bottom-up">
           <h1 class="font-white font-xlarge dosis">
             <span class="font-giant">olá,</span> <br />
@@ -39,179 +137,1374 @@
             pele.
           </h1>
           <div class="arrow-down-container">
-            <a href="#a1">
+            <a href="#p2">
               <img class="icon" src="assets/seta-para-baixo.png" alt="" />
             </a>
           </div>
         </div>
-      </section>
+      </article>
+    </section>
+    <!--Folha de Rosto fim-->
 
-      <section id="a1">
-        <article class="bg-light box-shadow cat-bg flex-container flex-end">
-          <div class="menu-button-container">
+    <section class="bg2" id="p2">
+      <!--carousel-->
+      <div
+        id="myCarousel"
+        class="carousel slide carousel-fade bg-dark"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-label="Slide 1"
+            aria-current="true"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            class=""
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            class=""
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/0.jpeg" class="carousel-img" />
+
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Tatuagens</h1>
+                <p>
+                  Galeria com tatuagens selecionadas para você conhecer meu
+                  trabalho!
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary bg-darker-btn" href="p4"
+                    >Ir para Galeria</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/d1.jpg" class="carousel-img" />
+
+            <div class="container">
+              <div class="carousel-caption font-dark">
+                <h1>Desenhos Autorais</h1>
+                <p>Deseínhos especias para cada cliente!</p>
+                <p>
+                  <a class="btn btn-lg btn-primary bg-darker-btn" href="#"
+                    >Ver mais!</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/main.PNG" class="carousel-img" />
+
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Biossegurança</h1>
+                <p>Artigos curto sobre cuidados com o cliente!</p>
+                <p>
+                  <a class="btn btn-lg btn-primary bg-darker-btn" href="#p6"
+                    >Ler</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--/.carousel-->
+    </section>
+    <!--artigo trabalho-->
+    <section id="p3" class="bg-green-dark cat-bg">
+      <article>
+        <div class="text-box text-align-right padding-10vh">
+          <h2 class="font-xxlarge font-dark indie-flower">
+            Cada tatuagem é única!
+          </h2>
+          <p class="font-xlarge font-white dosis text-inset">
+            Meu trabalho mescla estilos de
+            <span class="font-dark indie-flower font-bold">#Fineline </span>
+            e
+            <span class="font-dark indie-flower font-bold">#Blackwork</span>.
+            <br />
+            Com essas técnicas, consigo resultados desde tatuagens delicadas até
+            tatuagens mais pigmentadas com mistura de elementos. Cada tatuagem é
+            um desenho autoral criado exclusivamente para cada cliente.
+          </p>
+        </div>
+      </article>
+    </section>
+    <!--/.artigo trabalho-->
+
+    <section class="bg-light-skin" id="p4">
+      <!--navbar galeria-->
+      <div class="navbar navbar-dark bg-hot shadow-sm">
+        <div class="container">
+          <div href="#" class="navbar-brand d-flex align-items-center">
             <img
-              class="icon"
-              id="menu-button"
-              src="assets/menuicon.png"
+              width="32"
+              height="32"
+              aria-hidden="true"
+              class="me-2"
+              viewBox="0 0 24 24"
+              src="assets/heart.png"
               alt=""
             />
+
+            <strong class="indie-flower font-xlarge"
+              >Galeria de tatuagens!</strong
+            >
           </div>
-          <div class="text-box text-align-right padding-5vh">
-            <div class="menu-button-container"></div>
-            <h2 class="font-xxlarge font-dark indie-flower">
-              Cada tatuagem é única!
-            </h2>
-            <p class="font-xlarge font-white dosis text-inset">
-              Meu trabalho mescla estilos de
-              <span class="font-dark indie-flower font-bold">#Fineline </span>
-              e
-              <span class="font-dark indie-flower font-bold">#Blackwork</span>.
-              <br />
-              Com essas técnicas, consigo resultados desde tatuagens delicadas
-              até tatuagens mais pigmentadas com mistura de elementos. Cada
-              tatuagem é um desenho autoral criado exclusivamente para cada
-              cliente.
+        </div>
+      </div>
+      <!--galeria-->
+      <div class="album py-5">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/0.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/0.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/1.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/1.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/4.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/4.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/5.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/5.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/6.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/6.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/7.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/7.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/8.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/8.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/9.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/9.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/10.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/10.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/11.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/11.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/13.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/13.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/14.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/14.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/15.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/15.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/16.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/16.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/17.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/17.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/18.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/18.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/19.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/19.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/20.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/21.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/22.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/22.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/24.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/24.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/25.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/25.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/26.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/26.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/27.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/27.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/28.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/28.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/29.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/29.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/30.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/30.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/31.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/31.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/32.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/32.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/33.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/33.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/35.jpeg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/35.jpeg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--card-->
+          </div>
+        </div>
+      </div>
+
+      <!--/.galeria-->
+    </section>
+    <!--prova social-->
+    <section class="bg-green-dark" id="p5">
+      <!--navbar prova social-->
+      <div class="navbar navbar-dark bg-hot shadow-sm">
+        <div class="container">
+          <div href="#" class="navbar-brand d-flex align-items-center">
+            <img
+              width="32"
+              height="32"
+              aria-hidden="true"
+              class="me-2"
+              viewBox="0 0 24 24"
+              src="assets/heart.png"
+              alt=""
+            />
+
+            <strong class="indie-flower font-xlarge">Depoimentos</strong>
+          </div>
+        </div>
+      </div>
+      <div class="container marketing">
+        <div class="row">
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 140x140"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777"></rect>
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg>
+
+            <h2>Heading</h2>
+            <p>
+              Some representative placeholder content for the three columns of
+              text below the carousel. This is the first column.
             </p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
           </div>
-        </article>
-      </section>
 
-      <section id="a2" class="bg-green-dark padding-2vh bg-boxshadow black-bg">
-        <div class="flex-container flex-center flex-column">
-          <div class="clearfix-5vh"></div>
-          <h2 class="font-giant indie-flower font-dark">Portifólio</h2>
-          <div class="clearfix-5vh"></div>
-          <h2 class="font-xxlarge indie-flower font-dark">Arte na pele:</h2>
-        </div>
-
-        <div class="c-carousel c-carousel--responsive z-index-1">
-          <div class="c-carousel__slides js-carousel--responsive">
-            <div class="c-carousel__slide">
-              <img src="assets/0.jpeg" alt="" />
-            </div>
-
-            <div class="c-carousel__slide">
-              <img src="assets/1.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/2.jpeg" alt="" />
-            </div>
-
-            <div class="c-carousel__slide">
-              <img src="assets/4.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/5.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/6.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/7.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/8.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/9.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/10.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/11.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/12.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/13.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/14.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/15.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/16.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/17.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/18.jpeg" alt="" />
-            </div>
-
-            <div class="c-carousel__slide">
-              <img src="assets/19.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/20.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/21.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/22.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/23.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/24.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/25.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/26.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/27.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/28.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/29.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/30.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/31.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/32.jpeg" alt="" />
-            </div>
-            <div class="c-carousel__slide">
-              <img src="assets/33.jpeg" alt="" />
-            </div>
-
-            <div class="c-carousel__slide">
-              <img src="assets/35.jpeg" alt="" />
-            </div>
-          </div>
-          <div class="button-container">
-            <button
-              class="js-carousel--responsive-prev button-c font-xlarge dosis"
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 140x140"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
             >
-              «
-            </button>
-            <button
-              class="js-carousel--responsive-next button-c font-xlarge dosis"
-            >
-              »
-            </button>
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777"></rect>
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg>
+
+            <h2>Heading</h2>
+            <p>
+              Another exciting bit of representative placeholder content. This
+              time, we've moved on to the second column.
+            </p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
           </div>
-          <div
-            class="js-carousel--responsive-dots c-carousel--responsive-dots"
-          ></div>
+
+          <div class="col-lg-4">
+            <svg
+              class="bd-placeholder-img rounded-circle"
+              width="140"
+              height="140"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: 140x140"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777"></rect>
+              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg>
+
+            <h2>Heading</h2>
+            <p>
+              And lastly this, the third column of representative placeholder
+              content.
+            </p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          </div>
         </div>
-      </section>
-    </main>
+      </div>
+      <!--/.prova social-->
+    </section>
+    <!--Biossegurança-->
+    <section class="bg-green-light" id="p6">
+      <article class="biosseguranca">
+        <div class="text-box text-align-right padding-10vh bg-frosted-glass">
+          <h2 class="font-xxlarge font-green-light">Biossegurança</h2>
+          <p class="font-xlarge font-white dosis text-inset">
+            A biossegurança nada mais é que o cuidado em relação a sua saúde e a
+            minha também. Tatuagens exalam fluídos corporais, portanto o
+            manuseio de materiais descartáveis é primordial para evitar
+            contaminação. Trabalho com materiais 100% descartáveis, abertos
+            sempre na presença do cliente e todos devidamente isolados quando
+            montados. Assim, consigo trabalhar de forma segura e higiênica.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section id="p7" class="bg-dark">
+      <!--navbar galeria desenhos-->
+      <div class="navbar navbar-dark bg-hot shadow-sm">
+        <div class="container">
+          <div href="#" class="navbar-brand d-flex align-items-center">
+            <img
+              width="32"
+              height="32"
+              aria-hidden="true"
+              class="me-2"
+              viewBox="0 0 24 24"
+              src="assets/heart.png"
+              alt=""
+            />
+
+            <strong class="indie-flower font-xlarge"
+              >Galeria de desenhos!</strong
+            >
+          </div>
+        </div>
+      </div>
+      <!--galeria-->
+      <div class="album py-5">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/d5.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/d5.jpg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--card-->
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/d2.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/d2.jpg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/d3.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/d3.jpg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/d4.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/d4.jpg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--card-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  class="bd-placeholder-img card-img-top"
+                  width="100%"
+                  height="auto"
+                  src="assets/d1.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <p class="card-text"></p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="assets/d1.jpg" target="”zoom”">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Ver
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--card-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--contato-->
+    <section class="bg-hot" id="p8">
+      <div class="social-bar">
+        <div class="profile-pic"></div>
+        <h2>Brenda Fraga</h2>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/evel_ortega/"
+            ><img src="assets/instagram.png" alt="" class="social-icon"
+          /></a>
+          <a href="https://www.tiktok.com/@brendafraga.tattoo"
+            ><img src="assets/tiktok.png" alt="" class="social-icon"
+          /></a>
+          <a href="https://wa.me/5535998304382"
+            ><img src="assets/whatsapp.png" alt="" class="social-icon"
+          /></a>
+          
+        </div>
+     
+      
+     
+    </section>
+    <!--footer-->
+    <footer class="bg-hot flex-container flex-center flex-end">
+     <div class="info-boxes">
+        <p style="font-size: 9px">
+          © Copyright <span style="font-weight: 600">Evel Ortega</span> <br />
+          Designed by
+          <a href="https://github.com/EvelOrtega"> EvelOrtega</a>
+        </p>
+      </div>
+    </div>
+    </footer>
+
+    <!--/.footer-->
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-  <script src="index.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
 </html>
